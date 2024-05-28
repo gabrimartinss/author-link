@@ -26,6 +26,12 @@
     <%= form.number_field :pages %>
   </div>
 
+
+  <div>
+    <%= form.label :author_id, style: "display: block" %>
+    <%= form.select("author_id", @author_options, {include_blank: true}) %>
+  </div>
+
   <div>
     <%= form.submit %>
   </div>
