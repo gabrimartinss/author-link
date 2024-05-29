@@ -1,3 +1,10 @@
-<h1>Home</h1>
-<p><%= link_to "Cadastrar Livro", new_book_path %></p>
-<p><%= link_to "Cadastrar Autor", new_author_path %></p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-white">Hello, Welcome to AuthorLink!</h1>
+      <p class="lead text-white">Here you can add books and authors and link one with another! This application has the purpose to understand a little more of Ruby on Rails.</p>
+      <%= link_to "Book Register", new_book_path, class: "btn btn-primary" %>
+      <%= link_to "Author Register", new_author_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>

@@ -1,24 +1,24 @@
 <div id="<%= dom_id author %>">
-  <p>
-    <strong>Description:</strong>
+  <p class="text-white">
+    <strong>Author Name:</strong>
     <%= author.description %>
   </p>
 
-  <p>
+  <p class="text-white">
     <strong>Age:</strong>
-    <%= author.age %>
+    <span class="text-green"><%= author.age %>
   </p>
 
-  <p>
+  <p class="text-white">
     <strong>Country:</strong>
-    <%= author.country %>
+    <span class="text-green"><%= author.country %>
   </p>
 
-<p>
+  <p class="text-white">
     <strong>Books:</strong>
     <ul>
       <% author.books.each do |book| %>
-        <li><%= book.description %></li>
+        <li class="text-red"><%= book.description %></li>
       <% end %>
     </ul>
   </p>

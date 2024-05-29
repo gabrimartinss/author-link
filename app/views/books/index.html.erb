@@ -1,15 +1,25 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Books</h1>
-
-<div id="books">
-  <% @books.each do |book| %>
-    <%= render book %>
-    <p>
-      <%= link_to "Show this book", book %>
-    </p>
-  <% end %>
-</div>
-
-<%= link_to "New book", new_book_path %>
-<p><%= link_to "Home", root_path %></p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Book Name</th>
+      <th>Year</th>
+      <th>Pages</th>
+      <th>Author</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.description %></td>
+        <td><%= book.year %></td>
+        <td><%= book.pages %></td>
+        <td><%= book.author.description %></td>
+        <td>
+          <%= link_to "Show", book, class: "btn btn-primary btn-sm" %>
+          <%= link_to "Edit", edit_book_path(book), class: "btn btn-primary btn-sm" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

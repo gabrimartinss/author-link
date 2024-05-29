@@ -1,22 +1,22 @@
 <div id="<%= dom_id book %>">
-  <p>
-    <strong>Description:</strong>
+  <p class="text-white">
+    <strong>Book Name:</strong>
     <%= book.description %>
   </p>
 
-  <p>
+  <p class="text-white">
     <strong>Year:</strong>
     <%= book.year %>
   </p>
 
-  <p>
+  <p class="text-white">
     <strong>Pages:</strong>
     <%= book.pages %>
   </p>
 
-  <p>
+  <p class="text-white">
     <strong>Author:</strong>
-    <%= book.author.description %>
+    <span class="text-red"><%= book.author.description %>
   </p>
 
 
