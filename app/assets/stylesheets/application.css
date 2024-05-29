@@ -13,6 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+@import "custom";
+
+.text-green {
+  color: green;
+}
+.text-red {
+  color: red;
+}
+
+.text-blue {
+  color: blue;
+}
+
  body {
   background: linear-gradient(to right, #242a38, #4E586E 50%, #242a38);
 }

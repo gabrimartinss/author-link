@@ -1,17 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version - ruby 3.3.0p0
 
-Things you may want to cover:
+* Rails version - rails (~> 7.1.3, >= 7.1.3.3)
 
-* Ruby version
+* Database creation - rails dev:setup to drop create migrate and populate database with generic data
 
 * System dependencies
 
 * Configuration
-
-* Database creation
 
 * Database initialization
 
