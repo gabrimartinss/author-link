@@ -12,10 +12,7 @@
  *
  *= require_tree .
  *= require_self
- */
-
-@import "custom";
-
+ */ 
 .text-green {
   color: green;
 }
