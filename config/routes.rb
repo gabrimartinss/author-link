@@ -3,6 +3,11 @@ Rails.application.routes.draw do
   resources :authors
   resources :books
   root 'home#index'
+  Rails.application.routes.draw do
+    # Outras rotas
+    get 'switch_locale', to: 'application#switch_locale', as: :switch_locale
+  end
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

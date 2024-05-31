@@ -1,26 +1,38 @@
-<div id="<%= dom_id author %>">
-  <p class="text-white">
-    <strong>Author Name:</strong>
-    <%= author.description %>
-  </p>
+<div id="<%= dom_id author %>" class="card bg-dark text-white mb-3">
+  <div class="card-header">
+    <h3 class="card-title"><%= author.description %></h3>
+  </div>
+  <div class="card-body">
+    <div class="form-group row">
+      <label for="staticDescription" class="col-sm-2 col-form-label"><strong><%= t("author_name")%></strong></label>
+      <div class="col-sm-10">
+        <input type="text" readonly class="form-control-plaintext text-white" id="staticDescription" value="<%= author.description %>">
+      </div>
+    </div>
 
-  <p class="text-white">
-    <strong>Age:</strong>
-    <span class="text-green"><%= author.age %>
-  </p>
+    <div class="form-group row">
+      <label for="staticAge" class="col-sm-2 col-form-label"><strong><%=t("author_age")%></strong></label>
+      <div class="col-sm-10">
+        <input type="text" readonly class="form-control-plaintext text-white" id="staticAge" value="<%= author.age %>">
+      </div>
+    </div>
 
-  <p class="text-white">
-    <strong>Country:</strong>
-    <span class="text-green"><%= author.country %>
-  </p>
+    <div class="form-group row">
+      <label for="staticCountry" class="col-sm-2 col-form-label"><strong><%=t("author_country")%></strong></label>
+      <div class="col-sm-10">
+        <input type="text" readonly class="form-control-plaintext text-white" id="staticCountry" value="<%= author.country %>">
+      </div>
+    </div>
 
-  <p class="text-white">
-    <strong>Books:</strong>
-    <ul>
-      <% author.books.each do |book| %>
-        <li class="text-red"><%= book.description %></li>
-      <% end %>
-    </ul>
-  </p>
-
+    <div class="form-group row">
+      <label for="staticBooks" class="col-sm-2 col-form-label"><strong><%=t("author_books")%></strong></label>
+      <div class="col-sm-10">
+        <ul class="list-unstyled">
+          <% author.books.each do |book| %>
+            <li class="text-danger"><%= book.description %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>

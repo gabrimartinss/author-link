@@ -1,23 +1,36 @@
-<div id="<%= dom_id book %>">
-  <p class="text-white">
-    <strong>Book Name:</strong>
-    <%= book.description %>
-  </p>
+<div id="<%= dom_id book %>" class="card bg-dark text-white mb-3">
+  <div class="card-header">
+    <h3 class="card-title"><%= book.description %></h3>
+  </div>
+  <div class="card-body">
+    <form>
+      <div class="form-group row">
+        <label for="staticDescription" class="col-sm-2 col-form-label"><strong>Descrição:</strong></label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext text-white" id="staticDescription" value="<%= book.description %>">
+        </div>
+      </div>
 
-  <p class="text-white">
-    <strong>Year:</strong>
-    <%= book.year %>
-  </p>
+      <div class="form-group row">
+        <label for="staticYear" class="col-sm-2 col-form-label"><strong>Ano:</strong></label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext text-white" id="staticYear" value="<%= book.year %>">
+        </div>
+      </div>
 
-  <p class="text-white">
-    <strong>Pages:</strong>
-    <%= book.pages %>
-  </p>
+      <div class="form-group row">
+        <label for="staticPages" class="col-sm-2 col-form-label"><strong>Páginas:</strong></label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext text-white" id="staticPages" value="<%= book.pages %>">
+        </div>
+      </div>
 
-  <p class="text-white">
-    <strong>Author:</strong>
-    <span class="text-red"><%= book.author.description %>
-  </p>
-
-
+      <div class="form-group row">
+        <label for="staticAuthor" class="col-sm-2 col-form-label"><strong>Autor:</strong></label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext text-danger" id="staticAuthor" value="<%= book.author.description %>">
+        </div>
+      </div>
+    </form>
+  </div>
 </div>
