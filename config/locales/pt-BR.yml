@@ -27,6 +27,7 @@
 #       "yes": yup
 #       enabled: "ON"
 
-en:
-  hello: "Welcome!"
+pt-BR:
+  hello: "Seja Bem Vindo!"
   intro_text: "Este é o AuthorLink. Uma aplicação para você cadastrar seus livros e seus derivados autores."
+  intro_select: "Para começar selecione uma das opções abaixo: "

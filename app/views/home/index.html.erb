@@ -1,10 +1,10 @@
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h1 class="text-white">Hello, Welcome to AuthorLink!</h1>
-      <p class="lead text-white">Here you can add books and authors and link one with another! This application has the purpose to understand a little more of Ruby on Rails.</p>
-      <%= link_to "Book Register", new_book_path, class: "btn btn-primary" %>
-      <%= link_to "Author Register", new_author_path, class: "btn btn-primary" %>
-    </div>
-  </div>
+<div class="lead text-white jumbotron">
+  <h1 class="display-4"><%= t("hello")%></h1>
+  <p class="lead"><%= t("intro_text")%></p>
+  <hr class="my-4">
+  <p><%= t("intro_select")%></p>
+  <p class="lead">
+    <%= link_to "New Book", new_book_path, class: "btn btn-primary btn-lg" %>
+    <%= link_to "New Author", new_author_path, class: "btn btn-primary btn-lg" %>
+  </p>
 </div>
