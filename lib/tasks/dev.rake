@@ -16,9 +16,10 @@ namespace :dev do
   task add_books: :environment do
     show_spinner("Cadastrando Livros...") do
       books = [
-        {description: "Berserk", year: 1996, pages: 244, author: Author.find_by(description:'Kentarou')},
-        {description: "Generic Book 1", year: 1996, pages: 104, author: Author.all.sample},
-        {description: "Generic Book 2", year: 1996, pages: 364, author: Author.all.sample},
+        {description: "Berserk Vol-1", year: 1996, pages: 244, author: Author.find_by(description:'Kentarou')},
+        {description: "Berserk Vol-2", year: 1996, pages: 262, author: Author.find_by(description:'Kentarou')},
+        {description: "Think like a Gabriel", year: 1996, pages: 104, author: Author.find_by(description:'Gabriel')},
+        {description: "Be dumb like a Guilherme", year: 1996, pages: 364, author: Author.find_by(description:'Guilherme')},
       ]
 
       books.each do |book|
@@ -33,7 +34,7 @@ namespace :dev do
       authors = [
         {description: "Kentarou", age: 50, country: "Japan"},
         {description: "Gabriel", age: 26, country: "Brazil"},
-        {description: "Guilherme", age: 45, country: "Brazil"}
+        {description: "Guilherme", age: 31, country: "Brazil"}
       ]
 
       authors.each do |author|

@@ -4,6 +4,7 @@
       <th>Description</th>
       <th>Age</th>
       <th>Country</th>
+      <th>Books</th>
       <th>Actions</th>
     </tr>
   </thead>
@@ -14,6 +15,13 @@
         <td><%= author.age %></td>
         <td><%= author.country %></td>
         <td>
+          <ul>
+            <% author.books.each do |book| %>
+              <li><%= book.description %></li>
+            <% end %>
+          </ul>
+        </td>
+        <td>
           <%= link_to "Show", author, class: "btn btn-primary btn-sm" %>
           <%= link_to "Edit", edit_author_path(author), class: "btn btn-primary btn-sm" %>
         </td>
@@ -21,3 +29,7 @@
     <% end %>
   </tbody>
 </table>
+
+<p class="lead">
+  <%= link_to "New Author", new_author_path, class: "btn btn-primary btn-sml" %>
+</p>
