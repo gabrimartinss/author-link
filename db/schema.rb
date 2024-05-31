@@ -11,6 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.1].define(version: 2024_05_28_013557) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "authors", force: :cascade do |t|
     t.string "description"
     t.integer "age"
@@ -25,7 +28,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_28_013557) do
     t.integer "pages"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "author_id"
+    t.bigint "author_id"
     t.index ["author_id"], name: "index_books_on_author_id"
   end
 
