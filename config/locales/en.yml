@@ -29,4 +29,10 @@
 
 en:
   hello: "Welcome!"
-  intro_text: "Este é o AuthorLink. Uma aplicação para você cadastrar seus livros e seus derivados autores."
+  intro_text: "This is AuthorLink. An application for you to register your books and their respective authors."
+  intro_select: "To get started, select one of the options below:"
+  author_name: "Author's Name"
+  author_age: "Age"
+  author_country: "Country of Origin"
+  author_books: "Author's Books"
+  author_edit: "Edit this Author"
