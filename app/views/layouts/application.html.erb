@@ -31,6 +31,14 @@
             <%= link_to "Authors", authors_path, class: "nav-link" %>
           </li>
         </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <%= link_to "pt-BR", root_path(locale: 'pt-BR'), class: "nav-link" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "en", root_path(locale: 'en'), class: "nav-link" %>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
